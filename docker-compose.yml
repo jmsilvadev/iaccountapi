@@ -1,12 +1,26 @@
 version: '3'
 
 services:
+  app:
+    build: ./
+    container_name: form3libs
+    entrypoint: ./run-tests.sh
+    environment:
+      ACCOUNTAPI_URL: http://accountapi:8080
+    depends_on:
+      accountapi:
+        condition: service_started
+    volumes:
+      - ${PWD}/pkg:/form3libs
+
   accountapi:
     image: form3tech/interview-accountapi:v1.0.0-39-gef7db03d
     restart: on-failure
     depends_on:
-      - postgresql
-      - vault
+      postgresql:
+        condition: service_healthy
+      vault:
+        condition: service_started
     environment:
       - VAULT_ADDR=http://vault:8200
       - VAULT_TOKEN=8fb95528-57c6-422e-9722-d2147bcba8ed
@@ -21,6 +35,7 @@ services:
       - DATABASE-PASSWORD=123
     ports:
       - 8080:8080
+
   postgresql:
     image: postgres:9.5-alpine
     healthcheck:
