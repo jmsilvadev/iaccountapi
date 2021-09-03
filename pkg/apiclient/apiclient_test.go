@@ -9,8 +9,8 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/jmsilvadev/form3libs/apiclient/internal/utils/mocks"
-	"github.com/jmsilvadev/form3libs/apiclient/models"
+	"github.com/jmsilvadev/iaccountapi/apiclient/internal/utils/mocks"
+	"github.com/jmsilvadev/iaccountapi/apiclient/models"
 )
 
 const baseURL = "http://localhost:8080"

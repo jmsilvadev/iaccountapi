@@ -11,9 +11,9 @@ import (
 	"strings"
 
 	"github.com/google/uuid"
-	"github.com/jmsilvadev/form3libs/apiclient/internal/entities"
-	"github.com/jmsilvadev/form3libs/apiclient/internal/requests"
-	"github.com/jmsilvadev/form3libs/apiclient/models"
+	"github.com/jmsilvadev/iaccountapi/apiclient/internal/entities"
+	"github.com/jmsilvadev/iaccountapi/apiclient/internal/requests"
+	"github.com/jmsilvadev/iaccountapi/apiclient/models"
 )
 
 const endpoint = "/v1/organisation/accounts/"

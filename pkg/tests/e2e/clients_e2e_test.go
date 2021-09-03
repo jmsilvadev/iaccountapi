@@ -5,8 +5,8 @@ import (
 	"testing"
 
 	"github.com/google/uuid"
-	"github.com/jmsilvadev/form3libs/apiclient"
-	"github.com/jmsilvadev/form3libs/apiclient/models"
+	"github.com/jmsilvadev/iaccountapi/apiclient"
+	"github.com/jmsilvadev/iaccountapi/apiclient/models"
 )
 
 type scenariosCreate []struct {

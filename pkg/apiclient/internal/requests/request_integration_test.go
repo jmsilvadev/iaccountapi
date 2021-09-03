@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	"github.com/google/uuid"
-	"github.com/jmsilvadev/form3libs/apiclient/internal/requests"
+	"github.com/jmsilvadev/iaccountapi/apiclient/internal/requests"
 )
 
 type scenarios []struct {

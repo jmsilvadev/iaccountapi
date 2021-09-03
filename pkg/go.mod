@@ -1,4 +1,4 @@
-module github.com/jmsilvadev/form3libs
+module github.com/jmsilvadev/iaccountapi
 
 go 1.13
 
